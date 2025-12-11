@@ -720,6 +720,24 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_FullRestore,
     },
 
+        [ITEM_JOINT] =
+    {
+        .name = ITEM_NAME("Joint"),
+        .price = 40,
+        .description = COMPOUND_STRING(
+            "Puff, puff\n"
+            "and pass."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_HEAL_AND_CURE_STATUS,
+        .effect = gItemEffect_Joint,
+        .flingPower = 30,
+        .iconPic = gItemIcon_TinyBambooShoot,
+        .iconPalette = gItemIconPalette_TinyBambooShoot,
+    },
+
     [ITEM_REVIVE] =
     {
         .name = ITEM_NAME("Revive"),
@@ -13799,7 +13817,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Silph Co's scope\n"
             "makes unseeable\n"
-            "POKéMON visible."),
+            "Pokémon visible."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

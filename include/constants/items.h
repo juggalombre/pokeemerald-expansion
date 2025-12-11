@@ -33,6 +33,7 @@
 #define ITEM_CHERISH_BALL 27
 
 // Medicine
+#define ITEM_JOINT 855
 #define ITEM_POTION 28
 #define ITEM_SUPER_POTION 29
 #define ITEM_HYPER_POTION 30
@@ -1021,7 +1022,7 @@
 #define ITEM_DRAMPANITE 853
 #define ITEM_FALINKSITE 854
 
-#define ITEMS_COUNT 855
+#define ITEMS_COUNT 856
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

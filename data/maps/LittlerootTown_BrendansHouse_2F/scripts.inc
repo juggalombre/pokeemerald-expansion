@@ -125,6 +125,21 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanEast::
 	waitmovement 0
 	return
 
+LittlerootTown_BrendansHouse_2F_EventScript_Rotom::
+	lockall
+	faceplayer
+	waitse
+	playmoncry SPECIES_ROTOM, CRY_MODE_WEAK
+	msgbox PlayersHouse_2F_Text_Rotom, MSGBOX_DEFAULT
+	waitmoncry
+	releaseall
+	end
+
+PlayersHouse_2F_Text_Rotom:
+	.string "Ro-to-to...\p"
+	.string "(Seems like it's going\n"
+	.string "to miss you...)$"
+
 LittlerootTown_BrendansHouse_2F_Movement_BrendanEnters:
 	walk_down
 	walk_down
@@ -280,7 +295,7 @@ PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "Good! Everything's put away neatly!\p"
 	.string "They finished moving everything in\n"
 	.string "downstairs, too.\p"
-	.string "POKéMON movers are so convenient!\p"
+	.string "Pokémon movers are so convenient!\p"
 	.string "Oh, you should make sure that\n"
 	.string "everything's all there on your desk.$"
 

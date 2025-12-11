@@ -29,6 +29,12 @@ const u8 gItemEffect_FullRestore[7] = {
     [6] = ITEM6_HEAL_HP_FULL,
 };
 
+const u8 gItemEffect_Joint[7] = {
+    [3] = ITEM3_STATUS_ALL,
+    [4] = ITEM4_HEAL_HP,
+    [6] = ITEM6_HEAL_HP_FULL,
+};
+
 const u8 gItemEffect_MaxPotion[7] = {
     [4] = ITEM4_HEAL_HP,
     [6] = ITEM6_HEAL_HP_FULL,

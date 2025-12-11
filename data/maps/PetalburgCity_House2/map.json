@@ -15,29 +15,59 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
-      "x": 2,
-      "y": 5,
+      "local_id": "LOCALID_PetalburgCity_House2_PodGuyA",
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 5,
+      "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_House2_EventScript_Woman",
+      "script": "PetalburgCity_House2_EventScript_PodGuyA",
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_PetalburgCity_House2_PodGuyD",
       "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
-      "x": 7,
+      "x": 8,
       "y": 5,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_House2_EventScript_SchoolKid",
+      "script": "PetalburgCity_House2_EventScript_PodGuyD",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_PetalburgCity_House2_PodGuyC",
+      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PetalburgCity_House2_EventScript_PodGuyC",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_PetalburgCity_House2_PodGuyB",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PetalburgCity_House2_EventScript_PodGuyB",
       "flag": "0"
     }
   ],
@@ -58,5 +88,14 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 0,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PetalburgCity_House2_EventScript_Drawer"
+    }
+  ]
 }

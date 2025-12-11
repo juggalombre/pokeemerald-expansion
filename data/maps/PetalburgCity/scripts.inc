@@ -90,6 +90,33 @@ PetalburgCity_EventScript_Boy::
 	release
 	end
 
+PetalburgCity_EventScript_Hex::
+	lockall
+	faceplayer
+	msgbox PetalburgCity_Text_Hex, MSGBOX_NPC
+	checkitem ITEM_JOINT, 1
+	compare VAR_RESULT, 1
+	goto_if_ge PetalburgCity_EventScript_HexAlreadyHasJoints
+	compare VAR_RESULT, 0
+	call_if_eq PetalburgCity_EventScript_HexGiveJoints
+	releaseall
+	end
+
+PetalburgCity_EventScript_HexGiveJoints::
+	lockall
+	faceplayer
+	msgbox PetalburgCity_Text_HexGiveJoints, MSGBOX_NPC
+	giveitem ITEM_JOINT, 10
+	releaseall
+	end
+
+PetalburgCity_EventScript_HexAlreadyHasJoints::
+	lockall
+	faceplayer
+	msgbox PetalburgCity_Text_HexAlreadyHasJoints, MSGBOX_NPC
+	releaseall
+	end
+
 PetalburgCity_EventScript_WallysMom::
 	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
 	end
@@ -698,6 +725,16 @@ PetalburgCity_EventScript_GymBoy::
 	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC
 	end
 
+PetalburgCity_Text_Hex:
+	.string "Hey, {PLAYER}{KUN}!$"
+
+PetalburgCity_Text_HexGiveJoints:
+	.string "-WHIP CRACK-\n"
+	.string "Quieres?$"
+
+PetalburgCity_Text_HexAlreadyHasJoints:
+	.string "Don't be a hog.$"
+
 PetalburgCity_Text_WhereIsWally:
 	.string "Where has our WALLY gone?\p"
 	.string "We have to leave for VERDANTURF TOWN\n"
@@ -706,7 +743,7 @@ PetalburgCity_Text_WhereIsWally:
 PetalburgCity_Text_AreYouRookieTrainer:
 	.string "Hiya! Are you maybe…\n"
 	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
+	.string "Do you know what Pokémon TRAINERS\n"
 	.string "do when they reach a new town?\p"
 	.string "They first check what kind of GYM\n"
 	.string "is in the town.$"
@@ -726,13 +763,13 @@ PetalburgCity_Text_WaterReflection:
 	.string "What do you see reflected in your face?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
+	.string "Let's say you have six Pokémon.\n"
 	.string "If you catch another one…\p"
 	.string "It is automatically sent to a STORAGE\n"
 	.string "BOX over a PC connection.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PETALBURG CITY POKéMON GYM\n"
+	.string "PETALBURG CITY Pokémon GYM\n"
 	.string "LEADER: NORMAN\l"
 	.string "“A man in pursuit of power!”$"
 
@@ -746,7 +783,7 @@ PetalburgCity_Text_WallyHouseSign:
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"
 	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "dressed, are you a Pokémon TRAINER?$"
 
 PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"
