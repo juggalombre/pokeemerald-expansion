@@ -133,6 +133,13 @@ SlateportCity_Pokemart_EnergyGuru:
 	.2byte ITEM_HP_UP
 	pokemartlistend
 
+SlateportCity_EventScript_WonderTradeBoy1::
+	lockall
+	faceplayer
+	msgbox SlateportCity_Text_WonderTradeBoy1, MSGBOX_NPC
+	releaseall
+	end
+
 SlateportCity_EventScript_EffortRibbonWoman::
 	lock
 	faceplayer
@@ -918,6 +925,19 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 	waitstate
 	releaseall
 	end
+
+SlateportCity_Text_WonderTradeBoy1:
+	.string "Hee hee hee!\n"
+	.string "I love Wonder Trade!\p"
+	.string "$"
+
+SlateportCity_Text_WonderTradeBoy2:
+	.string "You have to help me, man!\p"
+	.string "I've been sending out the extra\n"
+	.string "Pokémon from my research project,\p"
+	.string "but SOMEBODY - Arceus only knows\n"
+	.string "who - is ONLY sending Bidoof!\p"
+	.string "PLEASE take one off of my hands!$"
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed:
 	.string "I'm the ENERGY GURU! I'll go for it and\n"

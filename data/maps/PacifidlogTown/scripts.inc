@@ -27,6 +27,19 @@ PacifidlogTown_EventScript_TownSign::
 	msgbox PacifidlogTown_Text_TownSign, MSGBOX_SIGN
 	end
 
+PacifidlogTown_EventScript_WonderTradeBoy2::
+	msgbox SlateportCity_Text_WonderTradeBoy2, MSGBOX_DEFAULT
+	givemon SPECIES_BIDOOF, 100, ITEM_JOINT
+	end
+
+PacifidlogTown_Text_WonderTradeBoy2:
+	.string "You have to help me, man!\p"
+	.string "I've been sending out the extra\n"
+	.string "Pokémon from my research project,\p"
+	.string "but SOMEBODY - Arceus only knows\n"
+	.string "who - is ONLY sending Bidoof!\p"
+	.string "PLEASE take one off of my hands!$"
+
 PacifidlogTown_Text_FastRunningCurrent:
 	.string "The sea between PACIFIDLOG and\n"
 	.string "SLATEPORT has a fast-running tide.\p"

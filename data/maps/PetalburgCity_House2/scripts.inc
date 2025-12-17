@@ -2,9 +2,9 @@ PetalburgCity_House2_MapScripts::
 	.byte 0
 
 PetalburgCity_House2_EventScript_PodGuyA::
-	applymovement LOCALID_PetalburgCity_House2_PodGuyA, Common_Movement_FaceOriginalDirection
 	lockall
-	msgbox PetalburgCity_House2_Text_PodGuyA1, MSGBOX_NPC
+	msgbox PetalburgCity_House2_Text_PodGuyA1, MSGBOX_DEFAULT
+	closemessage
 	applymovement LOCALID_PetalburgCity_House2_PodGuyA, Common_Movement_Delay48
 	waitmovement 0
 	playse SE_PIN
