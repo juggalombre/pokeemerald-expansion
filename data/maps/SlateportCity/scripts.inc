@@ -548,6 +548,32 @@ SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_TM_SECRET_POWER
 	pokemartlistend
 
+SlateportCity_EventScript_LemonadeGirl::
+	lock
+	faceplayer
+	message SlateportCity_Text_LemonadeGirlServe
+	waitmessage
+	pokemart SlateportCity_Pokemart_LemonadeGirl
+	msgbox SlateportCity_Text_LemonadeGirlThanks, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportCity_Pokemart_LemonadeGirl:
+	.2byte ITEM_LEMONADE
+	.2byte ITEM_BERRY_JUICE
+	.2byte ITEM_FRESH_WATER
+	.2byte ITEM_SODA_POP
+	.2byte ITEM_MOOMOO_MILK
+	.2byte ITEM_RAGE_CANDY_BAR
+	.2byte ITEM_CASTELIACONE
+	.2byte ITEM_LAVA_COOKIE
+	.2byte ITEM_BIG_MALASADA
+	.2byte ITEM_LUMIOSE_GALETTE
+	.2byte ITEM_OLD_GATEAU
+	.2byte ITEM_PEWTER_CRUNCHIES
+	.2byte ITEM_SHALOUR_SABLE
+	pokemartlistend
+
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
 	lockall
@@ -928,8 +954,7 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 
 SlateportCity_Text_WonderTradeBoy1:
 	.string "Hee hee hee!\n"
-	.string "I love Wonder Trade!\p"
-	.string "$"
+	.string "I love Wonder Trade!\p$"
 
 SlateportCity_Text_WonderTradeBoy2:
 	.string "You have to help me, man!\p"
@@ -938,6 +963,14 @@ SlateportCity_Text_WonderTradeBoy2:
 	.string "but SOMEBODY - Arceus only knows\n"
 	.string "who - is ONLY sending Bidoof!\p"
 	.string "PLEASE take one off of my hands!$"
+
+
+SlateportCity_Text_LemonadeGirlServe:
+	.string "Hiya!\p"
+	.string "Help me save up for a Ponyta!\p$"
+
+SlateportCity_Text_LemonadeGirlThanks:
+	.string "Pleaaase come back soon!!$"
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed:
 	.string "I'm the ENERGY GURU! I'll go for it and\n"
