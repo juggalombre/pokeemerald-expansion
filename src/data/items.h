@@ -13119,7 +13119,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OLD_ROD] =
     {
         .name = ITEM_NAME("Old Rod"),
-        .price = 0,
+        .price = 2500,
         .description = COMPOUND_STRING(
             "Use by any body of\n"
             "water to fish for\n"
@@ -13136,7 +13136,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GOOD_ROD] =
     {
         .name = ITEM_NAME("Good Rod"),
-        .price = 0,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "A decent fishing\n"
             "rod for catching\n"
@@ -13153,7 +13153,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SUPER_ROD] =
     {
         .name = ITEM_NAME("Super Rod"),
-        .price = 0,
+        .price = 10000,
         .description = COMPOUND_STRING(
             "The best fishing\n"
             "rod for catching\n"

@@ -736,7 +736,7 @@ PetalburgCity_Text_HexAlreadyHasJoints:
 	.string "Don't be a hog.$"
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
+	.string "Where has our Wally gone?\p"
 	.string "We have to leave for VERDANTURF TOWN\n"
 	.string "very soon…$"
 
@@ -778,7 +778,7 @@ PetalburgCity_Text_CitySign:
 	.string "“Where people mingle with nature.”$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "WALLY'S HOUSE$"
+	.string "Wally'S HOUSE$"
 
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"

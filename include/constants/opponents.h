@@ -854,16 +854,25 @@
 #define TRAINER_MARIELA                     848
 #define TRAINER_ALVARO                      849
 #define TRAINER_EVERETT                     850
-#define TRAINER_RED                         851
-#define TRAINER_LEAF                        852
-#define TRAINER_BRENDAN_PLACEHOLDER         853
-#define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_RED                         851 // Red placeholder - (I think these are used in MP)
+#define TRAINER_LEAF                        852 // Leaf placeholder
+#define TRAINER_BRENDAN_PLACEHOLDER         853 // Brendan placeholder
+#define TRAINER_MAY_PLACEHOLDER             854 // May placeholder
+#define TRAINER_LONDYN                      855 // EJFM Placeholder 1 - Londyn
+#define TRAINER_EJFM_2                      856 // EJFM Placeholder 2
+#define TRAINER_EJFM_3                      857 // EJFM Placeholder 3
+#define TRAINER_EJFM_4                      858 // EJFM Placeholder 4
+#define TRAINER_EJFM_5                      859 // EJFM Placeholder 5
+#define TRAINER_EJFM_6                      860 // EJFM Placeholder 6
+#define TRAINER_EJFM_7                      861 // EJFM Placeholder 7
+#define TRAINER_EJFM_8                      862 // EJFM Placeholder 8
+#define TRAINER_EJFM_9                      863 // EJFM Placeholder 9
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      855
+#define TRAINERS_COUNT                      864
 #define MAX_TRAINERS_COUNT                  864
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

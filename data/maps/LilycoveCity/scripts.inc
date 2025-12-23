@@ -410,7 +410,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "MAY: Oh, hey?\n"
+	.string "May: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
 	.string "I bought a whole bunch of DOLLS and\n"
 	.string "POSTERS.\p"
@@ -423,17 +423,17 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "me your Pokémon, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "MAY: Oh, why? {PLAYER}{KUN}, haven't you\n"
+	.string "May: Oh, why? {PLAYER}{KUN}, haven't you\n"
 	.string "been raising your Pokémon?\p"
 	.string "That's not a very good showing as a\n"
 	.string "TRAINER…$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "MAY: Come on, battle with me, so I can\n"
+	.string "May: Come on, battle with me, so I can\n"
 	.string "check out your Pokémon!$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "MAY: The Pokémon I raised won't be\n"
+	.string "May: The Pokémon I raised won't be\n"
 	.string "beaten by your Pokémon, {PLAYER}{KUN}!$"
 
 LilycoveCity_Text_MayDefeat:
@@ -444,7 +444,7 @@ LilycoveCity_Text_MayDefeat:
 	.string "strong, {PLAYER}{KUN}, didn't it?$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "MAY: I'm thinking of going back to\n"
+	.string "May: I'm thinking of going back to\n"
 	.string "LITTLEROOT soon.\p"
 	.string "I've caught a decent group of Pokémon,\n"
 	.string "and my Pokédex is coming along, so\l"

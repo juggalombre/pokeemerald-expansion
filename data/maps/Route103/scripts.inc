@@ -287,7 +287,7 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "MAY: Let's see… The Pokémon found\n"
+	.string "May: Let's see… The Pokémon found\n"
 	.string "on ROUTE 103 include…$"
 
 Route103_Text_MayLetsBattle:
@@ -304,7 +304,7 @@ Route103_Text_MayDefeated:
 	.string "{PLAYER}{KUN}, you're pretty good!$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "MAY: I think I know why my dad has\n"
+	.string "May: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that Pokémon,\n"
 	.string "but it already likes you.\p"

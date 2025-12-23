@@ -965,7 +965,7 @@ gText_HadQuiteAnExperienceTakeRest::
 gText_MomExplainHPGetPotions::
 	.string "MOM: Oh, good! You and your\n"
 	.string "Pokémon are looking great.\p"
-	.string "I just heard from PROF. BIRCH.\p"
+	.string "I just heard from Prof. Birch.\p"
 	.string "He said that Pokémon's energy is\n"
 	.string "measured in HP.\p"
 	.string "If your Pokémon lose their HP,\n"

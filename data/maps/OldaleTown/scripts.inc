@@ -33,6 +33,23 @@ OldaleTown_EventScript_Girl::
 	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
 	end
 
+OldaleTown_EventScript_BurgerBoy::
+	lockall
+	msgbox OldaleTown_Text_BurgerBoy, MSGBOX_DEFAULT
+	releaseall
+	end
+
+OldaleTown_EventScript_BattleGoblin::
+	trainerbattle_single TRAINER_LONDYN, OldaleTown_Text_BattleGoblinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
+	setvar VAR_0x8004, TRAINER_LONDYN
+	specialvar VAR_RESULT, IsTrainerRegistered
+	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
+	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 OldaleTown_EventScript_MartEmployee::
 	lock
 	faceplayer
@@ -339,6 +356,15 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	walk_left
 	step_end
 
+OldaleTown_Text_BurgerBoy:
+	.string "Mmf… mngh… nom…\p"
+	.string "… … …\p"
+	.string "(He's eating a cheeseburger…?)$"
+
+OldaleTown_Text_BattleGoblinIntro:
+	.string "Right!\p"
+	.string "You get to fight Londyn v0!$"
+
 OldaleTown_Text_SavingMyProgress:
 	.string "I want to take a rest, so I'm saving my\n"
 	.string "progress.$"
@@ -382,7 +408,7 @@ OldaleTown_Text_FinishedSketchingFootprints:
 	.string "own footprints…$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "MAY: {PLAYER}{KUN}!\n"
+	.string "May: {PLAYER}{KUN}!\n"
 	.string "Over here!\l"
 	.string "Let's hurry home!$"
 
