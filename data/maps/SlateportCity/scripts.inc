@@ -952,6 +952,41 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 	releaseall
 	end
 
+
+SlateportCity_EventScript_LondynGreeting::
+	lockall
+	goto_if_set FLAG_BADGE02_GET, SlateportCity_EventScript_LondynMain
+	goto SlateportCity_EventScript_LondynNotReady
+	end
+
+SlateportCity_EventScript_LondynNotReady::
+	msgbox SlateportCity_Text_LondynNotReady, MSGBOX_NPC
+	end
+
+SlateportCity_EventScript_LondynMain::
+	msgbox SlateportCity_Text_LondynIntroVIP, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, SlateportCity_EventScript_LondynBattle
+	msgbox SlateportCity_Text_LondynNoBattle, MSGBOX_NPC
+	release
+	end
+SlateportCity_EventScript_LondynBattle::
+	trainerbattle_single TRAINER_LONDYN, SlateportCity_Text_LondynIntro, SlateportCity_Text_LondynDefeated
+	msgbox SlateportCity_Text_LondynPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SlateportCity_Text_LondynNotReady:
+	.string "(some words here)\p"
+	.string "Come back when you've beaten\n"
+	.string "Brawly, over in Dewford.\p"
+	.string "Then we can battle, okay?$"
+
+SlateportCity_Text_LondynIntroVIP:
+	.string "(some words here)\n"
+	.string "Anyway, wanna battle?$"
+
+SlateportCity_Text_LondynNoBattle:
+	.string "Fair enough.$"
+
 SlateportCity_Text_WonderTradeBoy1:
 	.string "Hee hee hee!\n"
 	.string "I love Wonder Trade!\p$"

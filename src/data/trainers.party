@@ -2190,6 +2190,12 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Tail Whip
 
+Rockruff @ Nugget
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Play Rough
+- Growl
+
 === TRAINER_BRIANNA ===
 Name: BRIANNA
 Class: Lady
@@ -2232,6 +2238,10 @@ Linoone @ Nugget
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+Lycanroc @ Nugget
+Level: 27
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
 === TRAINER_CINDY_4 ===
 Name: CINDY
 Class: Lady
@@ -2246,6 +2256,10 @@ Linoone @ Nugget
 Level: 30
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
+Lycanroc @ Nugget
+Level: 30
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
 === TRAINER_CINDY_5 ===
 Name: CINDY
 Class: Lady
@@ -2257,6 +2271,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone @ Nugget
+Level: 33
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+Lycanroc @ Nugget
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -2277,6 +2295,10 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Mud Sport
 - Odor Sleuth
 - Sand Attack
+
+Lycanroc @ Nugget
+Level: 36
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MELISSA ===
 Name: MELISSA
@@ -5949,7 +5971,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Lillipup
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5962,7 +5984,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+Rockruff
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6126,7 +6148,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Mightyena
+Herdier
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -6143,7 +6165,7 @@ Swellow
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Mightyena
+Herdier
 Level: 30
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -6164,7 +6186,7 @@ Linoone
 Level: 29
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Mightyena
+Stoutland
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -6185,7 +6207,7 @@ Linoone
 Level: 32
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Mightyena
+Stoutland
 Level: 36
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -11261,7 +11283,7 @@ Wurmple
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
+Scatterbug
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -16879,10 +16901,12 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LONDYN ===
 Name: Londyn
 Class: VIP
-Pic: RS May
+Pic: Salon Maiden Anabel
+Mugshot: Purple
 Gender: Female
 Music: Female
 Double Battle: No
+
 
 Sylveon
 Level: 5
@@ -16891,16 +16915,34 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_EJFM_2 ===
-Name: EJFM 2
-Class: VIP
-Pic: RS May
+Name: Surprise!
+Pic: Leaf
 Gender: Female
 Music: Female
 Double Battle: No
+Mugshot: Purple
 
-Sylveon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lebomb (Lombre) @ Sitrus Berry  
+Ability: Rain Dish  
+Level: 14
+EVs: 252 HP / 252 Atk / 4 SpA  
+Lonely Nature  
+- Rain Dance  
+- Drain Punch  
+- Energy Ball  
+- Fake Out
+
+Ololo (Alomomola) @ Salac Berry  
+Ability: Hydration
+Level: 15
+Ball: Love Ball  
+Shiny: Yes
+EVs: 252 Atk / 4 SpA / 252 Spe  
+Naive Nature  
+- Acrobatics  
+- Alluring Voice  
+- Aqua Jet  
+- Hidden Power
 
 === TRAINER_EJFM_3 ===
 Name: EJFM 3

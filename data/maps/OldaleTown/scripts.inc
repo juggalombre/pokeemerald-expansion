@@ -40,12 +40,12 @@ OldaleTown_EventScript_BurgerBoy::
 	end
 
 OldaleTown_EventScript_BattleGoblin::
-	trainerbattle_single TRAINER_LONDYN, OldaleTown_Text_BattleGoblinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
-	setvar VAR_0x8004, TRAINER_LONDYN
-	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
+	trainerbattle_single TRAINER_EJFM_2, OldaleTown_Text_BattleGoblinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
+	// specialvar VAR_RESULT, ShouldTryRematchBattle
+	// goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
+	// setvar VAR_0x8004, TRAINER_LONDYN
+	// specialvar VAR_RESULT, IsTrainerRegistered
+	// goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
 	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -359,11 +359,12 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 OldaleTown_Text_BurgerBoy:
 	.string "Mmf… mngh… nom…\p"
 	.string "… … …\p"
-	.string "(He's eating a cheeseburger…?)$"
+	.string "(He's eating a cheeseburger.)$"
 
 OldaleTown_Text_BattleGoblinIntro:
 	.string "Right!\p"
-	.string "You get to fight Londyn v0!$"
+	.string "You get to fight whatever\n"
+	.string "this is!$"
 
 OldaleTown_Text_SavingMyProgress:
 	.string "I want to take a rest, so I'm saving my\n"
@@ -418,6 +419,6 @@ OldaleTown_Text_BrendanLetsGoBack:
 	.string "{PLAYER}, you should hustle back, too.$"
 
 OldaleTown_Text_TownSign:
-	.string "OLDALE TOWN\n"
+	.string "Oldale Town\n"
 	.string "“Where things start off scarce.”$"
 

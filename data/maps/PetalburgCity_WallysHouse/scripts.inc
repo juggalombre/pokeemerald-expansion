@@ -65,6 +65,23 @@ PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf::
 	release
 	end
 
+PetalburgCity_WallysHouse_EventScript_TV::
+	msgbox PetalburgCity_WallysHouse_Text_TV, MSGBOX_DEFAULT
+	release
+	end
+
+PetalburgCity_WallysHouse_Text_TV:
+	.string "A nature documentary is playing\n"
+	.string "on the TV.\p"
+	.string "A flock of Wingull fly over\n"
+	.string "the open ocean.\p"
+	.string "Then, a troupe of Grookey\n"
+	.string "bounce from tree to tree.\p"
+	.string "And then some Pyroar --\p"
+	.string "Is that a Zebstrika?\p"
+	.string "Suddenly, you don't feel like\n"
+	.string "watching this anymore…$"
+
 PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally:
 	.string "You're…\n"
 	.string "Ah, you must be {PLAYER}{KUN}, right?\p"
@@ -111,7 +128,7 @@ PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon:
 
 PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
 	.string "Oh? You met Wally in\n"
-	.string "EVER GRANDE CITY?\p"
+	.string "Ever Grande City?\p"
 	.string "Oh, {PLAYER}{KUN}, don't be silly.\p"
 	.string "He may have gotten healthy, but he\n"
 	.string "can't go somewhere far away like\l"
