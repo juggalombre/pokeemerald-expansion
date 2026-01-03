@@ -409,6 +409,42 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	msgbox LilycoveCity_Text_ExplainBerryBlender, MSGBOX_DEFAULT
 	return
 
+// EJFM VIP 2 - Arch
+
+LilycoveCity_EventScript_ArchGreeting::
+	lockall
+	goto_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_ArchMain
+	goto LilycoveCity_EventScript_ArchNotReady
+	end
+
+LilycoveCity_EventScript_ArchNotReady::
+	msgbox LilycoveCity_Text_ArchNotReady, MSGBOX_NPC
+	end
+
+LilycoveCity_EventScript_ArchMain::
+	msgbox LilycoveCity_Text_ArchIntroVIP, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, LilycoveCity_EventScript_ArchBattle
+	msgbox LilycoveCity_Text_ArchNoBattle, MSGBOX_NPC
+	release
+	end
+LilycoveCity_EventScript_ArchBattle::
+	trainerbattle_single TRAINER_ARCH, LilycoveCity_Text_ArchIntro, LilycoveCity_Text_ArchDefeated
+	msgbox LilycoveCity_Text_ArchPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+LilycoveCity_Text_ArchNotReady:
+	.string "(some words here)\p"
+	.string "Beat Winona first and then\n"
+	.string "come back here.$"
+
+LilycoveCity_Text_ArchIntroVIP:
+	.string "(some words here)\n"
+	.string "Anyway, wanna battle?$"
+
+LilycoveCity_Text_ArchNoBattle:
+	.string "Fair enough.$"
+
+
 LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "May: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"

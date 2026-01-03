@@ -16907,42 +16907,71 @@ Gender: Female
 Music: Female
 Double Battle: No
 
+Espeon (F)  
+Ability: Synchronize  
+Level: 15  
+Tera Type: Psychic  
+EVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
+Naughty Nature  
+IVs: 13 HP / 13 Def / 13 SpA / 13 SpD / 13 Spe  
+- Confusion  
+- Swift  
+- Quick Attack  
+- Detect  
 
-Sylveon
-Level: 5
-Ball: Love Ball
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Leafeon (M)  
+Ability: Leaf Guard  
+Level: 15  
+Tera Type: Grass  
+EVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
+Gentle Nature  
+IVs: 13 HP / 0 Def / 13 SpA / 13 SpD  
+- Razor Leaf  
+- Tackle  
+- Tail Whip  
+- Quick Attack  
+
+Glaceon (M)  
+Ability: Snow Cloak  
+Level: 17  
+Tera Type: Ice  
+EVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
+Jolly Nature  
+IVs: 13 HP / 3 Def / 0 SpA / 3 SpD / 13 Spe  
+- Icy Wind  
+- Mud-Slap  
+- Swift  
+- Quick Attack  
+
+Sylveon (F) @ Oran Berry  
+Ability: Cute Charm  
+Level: 19  
+Tera Type: Fairy  
+EVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe  
+Bashful Nature  
+IVs: 13 HP / 13 Def / 13 SpA / 13 SpD / 13 Spe  
+- Disarming Voice  
+- Tickle  
+- Fake Tears  
+- Quick Attack  
 
 
-=== TRAINER_EJFM_2 ===
-Name: Surprise!
-Pic: Leaf
-Gender: Female
-Music: Female
-Double Battle: No
+=== TRAINER_ARCH ===
+Name: Arch
+Class: VIP
+Pic: Aqua Leader Archie
 Mugshot: Purple
+Gender: Male
+Music: Aqua
+Double Battle: No
 
-Lebomb (Lombre) @ Sitrus Berry  
+This thing (Pachirisu) @ Sitrus Berry  
 Ability: Rain Dish  
 Level: 14
 EVs: 252 HP / 252 Atk / 4 SpA  
 Lonely Nature  
-- Rain Dance  
-- Drain Punch  
-- Energy Ball  
-- Fake Out
+- Lovely Kiss
 
-Ololo (Alomomola) @ Salac Berry  
-Ability: Hydration
-Level: 15
-Ball: Love Ball  
-Shiny: Yes
-EVs: 252 Atk / 4 SpA / 252 Spe  
-Naive Nature  
-- Acrobatics  
-- Alluring Voice  
-- Aqua Jet  
-- Hidden Power
 
 === TRAINER_EJFM_3 ===
 Name: EJFM 3

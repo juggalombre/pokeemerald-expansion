@@ -40,7 +40,7 @@ OldaleTown_EventScript_BurgerBoy::
 	end
 
 OldaleTown_EventScript_BattleGoblin::
-	trainerbattle_single TRAINER_EJFM_2, OldaleTown_Text_BattleGoblinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
+	trainerbattle_single TRAINER_ARCH, OldaleTown_Text_BattleGoblinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
 	// specialvar VAR_RESULT, ShouldTryRematchBattle
 	// goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
 	// setvar VAR_0x8004, TRAINER_LONDYN

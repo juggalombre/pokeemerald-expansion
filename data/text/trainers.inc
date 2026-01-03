@@ -799,6 +799,7 @@ Route108_Text_CarolinaPostBattle:
 	.string "Since I'm at sea like this, I wouldn't\n"
 	.string "mind putting on a pink, frilly swimsuit…$"
 
+/* EJFM VIP 1 - Londyn */
 SlateportCity_Text_LondynIntro:
 	.string "(some words here)$"
 
@@ -3598,6 +3599,15 @@ Route123_Text_KayleyDefeat:
 Route123_Text_KayleyPostBattle:
 	.string "Using accessories effectively is\n"
 	.string "the secret behind fashion appeal.$"
+
+LilycoveCity_Text_ArchIntro:
+	.string "(some words here)$"
+
+LilycoveCity_Text_ArchDefeated:
+	.string "$"
+
+LilycoveCity_Text_ArchPostBattle:
+	.string "$"
 
 Route124_Text_SpencerIntro:
 	.string "Hey, are you lost at sea?\p"

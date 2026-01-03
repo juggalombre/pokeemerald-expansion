@@ -858,8 +858,8 @@
 #define TRAINER_LEAF                        852 // Leaf placeholder
 #define TRAINER_BRENDAN_PLACEHOLDER         853 // Brendan placeholder
 #define TRAINER_MAY_PLACEHOLDER             854 // May placeholder
-#define TRAINER_LONDYN                      855 // EJFM Placeholder 1 - Londyn
-#define TRAINER_EJFM_2                      856 // EJFM Placeholder 2
+#define TRAINER_LONDYN                      855 // EJFM Placeholder 1 - Londyn (Slateport Market)
+#define TRAINER_ARCH                        856 // EJFM Placeholder 2 - Arch (Lilycove Beach)
 #define TRAINER_EJFM_3                      857 // EJFM Placeholder 3
 #define TRAINER_EJFM_4                      858 // EJFM Placeholder 4
 #define TRAINER_EJFM_5                      859 // EJFM Placeholder 5
