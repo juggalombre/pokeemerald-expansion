@@ -1692,14 +1692,24 @@
       "blockdata_filepath": "data/layouts/ShoalCave_HighTideInnerRoom/map.bin"
     },
     {
+      "id": "LAYOUT_OLDALE2",
+      "name": "OldaleTown_Layout2",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/UnusedCave1/border.bin",
+      "blockdata_filepath": "data/layouts/UnusedCave1/map.bin"
+    },
+    {
       "id": "LAYOUT_UNUSED_CAVE1",
       "name": "UnusedCave1_Layout",
       "width": 1,
       "height": 1,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/UnusedCave1/border.bin",
-      "blockdata_filepath": "data/layouts/UnusedCave1/map.bin"
+      "border_filepath": "data/layouts/UnusedCave2/border.bin",
+      "blockdata_filepath": "data/layouts/UnusedCave2/map.bin"
     },
     {
       "id": "LAYOUT_UNUSED_CAVE2",
@@ -4410,6 +4420,26 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERGRANDE_CITY_HOUSE1",
+      "name": "EvergrandeCity_House1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MysteryEventsHouse",
+      "border_filepath": "data/layouts/EvergrandeCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/EvergrandeCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_MART",
+      "name": "EverGrandeCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/EverGrandeCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_Mart/map.bin"
     }
   ]
 }

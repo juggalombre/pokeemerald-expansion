@@ -1014,6 +1014,78 @@ RustboroCity_EventScript_Boy1::
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
 	end
 
+RustboroCity_EventScript_RatBoy::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_ALOLARAT
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox RustboroCity_Text_RatBoy_Trade1 MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_EventScript_RatBoy_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, RustboroCity_EventScript_RatBoy_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, RustboroCity_EventScript_RatBoy_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox RustboroCity_Text_RatBoy_ThankYou, MSGBOX_DEFAULT
+	// setflag FLAG_RUSTBORO_NPC_TRADE_COMPLETED
+	release
+	end
+
+RustboroCity_EventScript_RatBoy_DeclineTrade::
+	msgbox RustboroCity_Text_RatBoy_TradeDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_RatBoy_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox RustboroCity_Text_RatBoy_WrongMon, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_RatBoy_Rat::
+	lockall
+	faceplayer
+	waitse
+	playmoncry SPECIES_RATTATA, CRY_MODE_NORMAL
+	msgbox RustboroCity_Text_RatBoy_Rat, MSGBOX_DEFAULT
+	waitmoncry
+	releaseall
+	end
+
+RustboroCity_Text_RatBoy_Rat:
+	.string "Rataaaa!$"
+
+
+RustboroCity_Text_RatBoy_ThankYou:
+	.string "Sweet, thank you!\p"
+	.string "I'll have another one ready\n"	
+	.string "whenever you are.$"
+
+RustboroCity_Text_RatBoy_Trade1:
+	.string "Oh, this?\n"
+	.string "It's an Alolan Rattata.\p"
+	.string "I have about eighty million\n"
+	.string "of the stupid things.\n"
+	.string "I'll trade it to you if you\n"
+	.string "have a Kantonian one.$"
+
+RustboroCity_Text_RatBoy_TradeDeclined:
+	.string "Aw, okay.\p"
+	.string "It's an Alolan Rattata, though...$"	
+
+RustboroCity_Text_RatBoy_WrongMon:
+	.string "This isn't a Kantonian {STR_VAR_1}...$"
+
 RustboroCity_Text_WeShortenItToDevon:
 	.string "The DEVON CORPORATION…\n"
 	.string "We all just shorten it to DEVON.\p"

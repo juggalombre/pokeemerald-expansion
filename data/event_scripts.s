@@ -1162,3 +1162,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
+
+	.include "data/maps/EvergrandeCity_House1/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_Mart/scripts.inc"

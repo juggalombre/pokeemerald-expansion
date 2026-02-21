@@ -23,12 +23,21 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	setvar VAR_TEMP_1, 1
 	end
 
+EverGrandeCity_EventScript_Closed::
+	msgbox EverGrandeCity_Text_Closed, MSGBOX_SIGN
+	end
+
+EverGrandeCity_Text_Closed:
+	.string "CLOSED\n"
+	.string "SORRY$"
+
+
 EverGrandeCity_Text_EnteringVictoryRoad:
-	.string "ENTERING VICTORY ROAD$"
+	.string "Entering Victory Road$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
-	.string "ENTERING Pokémon LEAGUE\n"
-	.string "CENTER GATE$"
+	.string "Entering Pokémon League\n"
+	.string "Center Gate$"
 
 EverGrandeCity_Text_CitySign:
 	.string "Ever Grande City\p"
